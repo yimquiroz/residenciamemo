@@ -220,6 +220,11 @@ namespace RESIDENCIAV1
             lbltime.Text = null;
             cronometro.Reset();
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
  

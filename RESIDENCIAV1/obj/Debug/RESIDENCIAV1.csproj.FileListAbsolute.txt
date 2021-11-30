@@ -116,7 +116,4 @@ C:\Users\ASUS S510U\Downloads\montse\residencia-main\RESIDENCIAV1\RESIDENCIAV1\b
 C:\Users\ASUS S510U\Downloads\montse\residencia-main\RESIDENCIAV1\RESIDENCIAV1\bin\Debug\es\Microsoft.VisualStudio.Data.Services.resources.dll
 C:\Users\ASUS S510U\Downloads\montse\residencia-main\RESIDENCIAV1\RESIDENCIAV1\bin\Debug\es\Microsoft.VisualStudio.Data.Core.resources.dll
 C:\Users\ASUS S510U\Downloads\montse\residencia-main\RESIDENCIAV1\RESIDENCIAV1\obj\Debug\RESIDENCIAV1.exe.config
-C:\Users\ASUS S510U\Downloads\montse\residencia-main\RESIDENCIAV1\RESIDENCIAV1\obj\Debug\RdlCompile.cache
-C:\Users\ASUS S510U\Downloads\montse\residencia-main\RESIDENCIAV1\RESIDENCIAV1\obj\Debug\RdlCompile.compiled
 C:\Users\ASUS S510U\Downloads\montse\residencia-main\RESIDENCIAV1\RESIDENCIAV1\obj\Debug\RESIDENCIAV1.csproj.CopyComplete
-C:\Users\ASUS S510U\Downloads\montse\residencia-main\RESIDENCIAV1\RESIDENCIAV1\obj\Debug\RESIDENCIAV1.SimonDice.resources
