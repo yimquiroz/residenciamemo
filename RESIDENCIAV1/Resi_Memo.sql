@@ -25,7 +25,7 @@ Movimientos int
 )
 
 ALTER TABLE Historial ADD FOREIGN KEY (Id_Usuario ) REFERENCES Usuarios(Id)
-ALTER TABLE Usuarios ADD CONSTRAINT pk_Id PRIMARY KEY (Id)
+ALTER TABLE Usuarios ADD CONSTRAINT pk_Id PRIMARY KEY (Id);
 Alter PROCEDURE [dbo].[Insertar_Historial] 
 @Id_Usuario
 
