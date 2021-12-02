@@ -12,8 +12,12 @@ using System.Diagnostics;
 
 namespace RESIDENCIAV1
 {
-    public partial class Memorama : Form
+    public partial class Memorama : Form 
     {
+        Login login = new Login();
+
+        Usuarios user = new Usuarios();
+
         public const int WM_NCLBUTTONDOWN = 0xA1;
         public const int HT_CAPTION = 0x2;
 
@@ -42,7 +46,7 @@ namespace RESIDENCIAV1
         {
             timer1.Enabled = false;
             timer1.Stop();
-            label2.Text = "0";
+            lblmov.Text = "0";
             CartasVolteadas = 0;
             Movimientos = 0;
             PanelJuego.Controls.Clear();
@@ -108,9 +112,10 @@ namespace RESIDENCIAV1
 
         private void btnCarta_Click(object sender, EventArgs e)
         {
+
             
             Movimientos++;
-            label2.Text = Convert.ToString(Movimientos);
+            lblmov.Text = Convert.ToString(Movimientos);
             var CartasSeleccionadasUsuario = (PictureBox)sender;
             CartaActual = Convert.ToInt32(CartasRevueltas[Convert.ToInt32(CartasSeleccionadasUsuario.Name) - 1]);
             CartasSeleccionadasUsuario.Image = RecuperarImagen(CartaActual);
@@ -139,6 +144,13 @@ namespace RESIDENCIAV1
                     {
                         cronometro.Stop();
                         MessageBox.Show("El juego terminó " + lbltime.Text);
+
+
+                        int IDUser = Convert.ToInt32(login.usuario);
+                        
+                        //mandar a llamar de uno a otro
+                        ConexionBD.InsertaHistorial(, lbltime.Text , Convert.ToInt32(lblmov.Text));
+                        
                     
                     }
 

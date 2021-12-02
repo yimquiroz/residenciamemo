@@ -16,7 +16,7 @@ namespace RESIDENCIAV1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Memorama());
+            Application.Run(new Login());
         }
     }
 }

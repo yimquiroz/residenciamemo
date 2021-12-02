@@ -39,7 +39,7 @@
             this.btniniciar = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblmov = new System.Windows.Forms.Label();
             this.btnReiniciar = new System.Windows.Forms.Button();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
@@ -106,7 +106,7 @@
             this.panel2.Controls.Add(this.btniniciar);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.lblmov);
             this.panel2.Controls.Add(this.btnReiniciar);
             this.panel2.Location = new System.Drawing.Point(0, 41);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
@@ -165,17 +165,17 @@
             this.label1.TabIndex = 45;
             this.label1.Text = "MEMORAMA";
             // 
-            // label2
+            // lblmov
             // 
-            this.label2.AutoSize = true;
-            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label2.Font = new System.Drawing.Font("Rockwell", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(226, 359);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(24, 25);
-            this.label2.TabIndex = 44;
-            this.label2.Text = "0";
+            this.lblmov.AutoSize = true;
+            this.lblmov.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblmov.Font = new System.Drawing.Font("Rockwell", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblmov.Location = new System.Drawing.Point(226, 359);
+            this.lblmov.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblmov.Name = "lblmov";
+            this.lblmov.Size = new System.Drawing.Size(24, 25);
+            this.lblmov.TabIndex = 44;
+            this.lblmov.Text = "0";
             // 
             // btnReiniciar
             // 
@@ -228,7 +228,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblmov;
         private System.Windows.Forms.Button btnReiniciar;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lbltime;

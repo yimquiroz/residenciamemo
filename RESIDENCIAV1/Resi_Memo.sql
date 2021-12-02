@@ -24,6 +24,35 @@ Tiempo varchar(10),
 Movimientos int
 )
 
+select*from Usuarios
+insert into Historial (Id_Usuario,Tiempo,Movimientos) values (1,'0',34)
+
+create procedure dbo.Insertar_historial
+@Id_Usuario int,
+@Tiempo varchar(10),
+@Movimientos int
+AS
+BEGIN
+insert into dbo.Historial (Id_Usuario,Tiempo,Movimientos) values (@Id_Usuario,@Tiempo,@Movimientos)
+end
+
+alter procedure [dbo].[Traer_Usuario]
+@NombreUsuario varchar(30)
+AS
+BEGIN
+select Id from dbo.Usuarios  where Usuario = 'yim'
+end
+
+
+select Id from dbo.Usuarios  where Usuario = 'yim'
+
+
+exec [dbo].[Traer_Usuario] 'yim'
+
+
+select*from Historial
+
+
 ALTER TABLE Historial ADD FOREIGN KEY (Id_Usuario ) REFERENCES Usuarios(Id)
 ALTER TABLE Usuarios ADD CONSTRAINT pk_Id PRIMARY KEY (Id);
 Alter PROCEDURE [dbo].[Insertar_Historial] 

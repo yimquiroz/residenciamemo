@@ -17,6 +17,12 @@ namespace RESIDENCIAV1
         public const int WM_NCLBUTTONDOWN = 0xA1;
         public const int HT_CAPTION = 0x2;
 
+        public Usuarios usuario1 = new Usuarios();
+
+        public int usuario;
+
+        public DataTable UserID;
+
         public Login()
         {
             InitializeComponent();
@@ -67,19 +73,30 @@ namespace RESIDENCIAV1
         }
         
 
-        private void button1_Click(object sender, EventArgs e)
+        public void button1_Click(object sender, EventArgs e)
         {
+
+            UserID = ConexionBD.Traer_IdUser(usertxt.Text);
+            usuario1.Id =Convert.ToInt32( UserID.Rows[0]["id"].ToString());
             conexion.Open();
             string consulta = "select * from Usuarios where Usuario='" + usertxt.Text + "'and Passw='" + psstxt.Text + "'";
             SqlCommand comando = new SqlCommand(consulta,conexion);
             SqlDataReader lector;
             lector = comando.ExecuteReader();
 
-            if(lector.HasRows==true)
+            
+
+            if (lector.HasRows==true)
             {
+
+                
+
                 Memorama memorama = new Memorama();
                 this.Hide();
                 memorama.Show();
+
+                
+
             }
             else
             {
@@ -117,6 +134,11 @@ namespace RESIDENCIAV1
                 button2.BringToFront();
                 psstxt.PasswordChar = '\0';
             }
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
