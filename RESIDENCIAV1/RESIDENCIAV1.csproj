@@ -118,6 +118,9 @@
     <EmbeddedResource Include="Registro.resx">
       <DependentUpon>Registro.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="SimonDice.resx">
+      <DependentUpon>SimonDice.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -169,6 +172,21 @@
     <None Include="Resources\oculto1.PNG" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\alegria.png" />
+    <None Include="Resources\alegria1.png" />
+    <None Include="Resources\Disgusto.png" />
+    <None Include="Resources\enojo.png" />
+    <None Include="Resources\enojo1.png" />
+    <None Include="Resources\tristeza.png" />
+    <None Include="Resources\tristeza1.png" />
+    <None Include="Resources\1.png" />
+    <None Include="Resources\1_on.png" />
+    <None Include="Resources\2.png" />
+    <None Include="Resources\3_on.png" />
+    <None Include="Resources\4.png" />
+    <None Include="Resources\4_on.png" />
+    <None Include="Resources\2_on.png" />
+    <None Include="Resources\3.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

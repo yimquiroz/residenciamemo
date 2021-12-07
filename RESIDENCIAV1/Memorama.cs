@@ -149,7 +149,7 @@ namespace RESIDENCIAV1
                         int IDUser = Convert.ToInt32(login.usuario);
                         
                         //mandar a llamar de uno a otro
-                        ConexionBD.InsertaHistorial(, lbltime.Text , Convert.ToInt32(lblmov.Text));
+                        //ConexionBD.InsertaHistorial(, lbltime.Text , Convert.ToInt32(lblmov.Text));
                         
                     
                     }

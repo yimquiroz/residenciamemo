@@ -302,3 +302,4 @@ C:\Users\ASUS S510U\OneDrive\Escritorio\residenciamemo\RESIDENCIAV1\obj\Debug\RE
 C:\Users\ASUS S510U\OneDrive\Escritorio\residenciamemo\RESIDENCIAV1\bin\Debug\Microsoft.ReportViewer.Common.dll
 C:\Users\ASUS S510U\OneDrive\Escritorio\residenciamemo\RESIDENCIAV1\bin\Debug\Microsoft.SqlServer.Types.dll
 C:\Users\ASUS S510U\OneDrive\Escritorio\residenciamemo\RESIDENCIAV1\obj\Debug\RESIDENCIAV1.csproj.AssemblyReference.cache
+C:\Users\ASUS S510U\OneDrive\Escritorio\residenciamemo\RESIDENCIAV1\obj\Debug\RESIDENCIAV1.SimonDice.resources
