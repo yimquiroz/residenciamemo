@@ -51,11 +51,12 @@
             // PanelJuego
             // 
             this.PanelJuego.BackColor = System.Drawing.Color.White;
-            this.PanelJuego.Location = new System.Drawing.Point(488, 57);
+            this.PanelJuego.Location = new System.Drawing.Point(487, 54);
             this.PanelJuego.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PanelJuego.Name = "PanelJuego";
             this.PanelJuego.Size = new System.Drawing.Size(947, 825);
             this.PanelJuego.TabIndex = 0;
+            this.PanelJuego.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelJuego_Paint);
             // 
             // timer1
             // 

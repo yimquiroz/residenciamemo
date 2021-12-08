@@ -213,11 +213,12 @@ namespace RESIDENCIAV1
 
         private void btniniciar_Click(object sender, EventArgs e)
         {
-            
+            this.PanelJuego.Visible = true;
             timer2.Enabled = true;
             cronometro.Start();
             btniniciar.Enabled = true;
-            
+            //this.PanelJuego.Enabled = true; No funciono de esta manera
+            //entonces lo hice invisible pero esta es mas o menos la idea
         }
 
         private void timer2_Tick(object sender, EventArgs e)
@@ -247,6 +248,13 @@ namespace RESIDENCIAV1
         {
             Reporte R = new Reporte();
             R.Show();
+        }
+
+        private void PanelJuego_Paint(object sender, PaintEventArgs e)
+        {
+            this.PanelJuego.Visible= false;
+            //this.PanelJuego.Enabled = false; No funciono de esta manera
+            //entonces lo hice invisible pero esta es mas o menos la idea
         }
     }
 }
