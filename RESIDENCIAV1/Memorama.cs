@@ -152,8 +152,6 @@ namespace RESIDENCIAV1
                         
                         //mandar a llamar de uno a otro
 
-                        
-                    
                     }
 
                     CartaTemporal1.Enabled = false;

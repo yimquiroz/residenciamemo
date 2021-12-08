@@ -51,9 +51,10 @@
             // PanelJuego
             // 
             this.PanelJuego.BackColor = System.Drawing.Color.White;
-            this.PanelJuego.Location = new System.Drawing.Point(549, 71);
+            this.PanelJuego.Location = new System.Drawing.Point(488, 57);
+            this.PanelJuego.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PanelJuego.Name = "PanelJuego";
-            this.PanelJuego.Size = new System.Drawing.Size(1065, 1031);
+            this.PanelJuego.Size = new System.Drawing.Size(947, 825);
             this.PanelJuego.TabIndex = 0;
             // 
             // timer1
@@ -67,8 +68,9 @@
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Location = new System.Drawing.Point(-2, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1632, 63);
+            this.panel1.Size = new System.Drawing.Size(1451, 50);
             this.panel1.TabIndex = 29;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
@@ -78,9 +80,9 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(1527, 5);
+            this.label7.Location = new System.Drawing.Point(1357, 4);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(31, 32);
+            this.label7.Size = new System.Drawing.Size(27, 29);
             this.label7.TabIndex = 23;
             this.label7.Text = "_";
             this.label7.Click += new System.EventHandler(this.label7_Click);
@@ -90,9 +92,9 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(1569, 9);
+            this.label6.Location = new System.Drawing.Point(1395, 7);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(37, 36);
+            this.label6.Size = new System.Drawing.Size(31, 29);
             this.label6.TabIndex = 22;
             this.label6.Text = "X";
             this.label6.Click += new System.EventHandler(this.label6_Click);
@@ -108,16 +110,18 @@
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.lblmov);
             this.panel2.Controls.Add(this.btnReiniciar);
-            this.panel2.Location = new System.Drawing.Point(0, 63);
+            this.panel2.Location = new System.Drawing.Point(0, 50);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(510, 1058);
+            this.panel2.Size = new System.Drawing.Size(453, 846);
             this.panel2.TabIndex = 30;
             // 
             // btnHistorial
             // 
-            this.btnHistorial.Location = new System.Drawing.Point(145, 597);
+            this.btnHistorial.Location = new System.Drawing.Point(129, 478);
+            this.btnHistorial.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnHistorial.Name = "btnHistorial";
-            this.btnHistorial.Size = new System.Drawing.Size(186, 54);
+            this.btnHistorial.Size = new System.Drawing.Size(165, 43);
             this.btnHistorial.TabIndex = 50;
             this.btnHistorial.Text = "Historial";
             this.btnHistorial.UseVisualStyleBackColor = true;
@@ -125,9 +129,10 @@
             // 
             // BTNTerminar
             // 
-            this.BTNTerminar.Location = new System.Drawing.Point(145, 498);
+            this.BTNTerminar.Location = new System.Drawing.Point(129, 398);
+            this.BTNTerminar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BTNTerminar.Name = "BTNTerminar";
-            this.BTNTerminar.Size = new System.Drawing.Size(164, 51);
+            this.BTNTerminar.Size = new System.Drawing.Size(146, 41);
             this.BTNTerminar.TabIndex = 49;
             this.BTNTerminar.Text = "Terminar";
             this.BTNTerminar.UseVisualStyleBackColor = true;
@@ -136,10 +141,10 @@
             // lbltime
             // 
             this.lbltime.AutoSize = true;
-            this.lbltime.Location = new System.Drawing.Point(130, 872);
+            this.lbltime.Location = new System.Drawing.Point(116, 698);
             this.lbltime.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbltime.Name = "lbltime";
-            this.lbltime.Size = new System.Drawing.Size(71, 20);
+            this.lbltime.Size = new System.Drawing.Size(55, 16);
             this.lbltime.TabIndex = 48;
             this.lbltime.Text = "00:00:00";
             // 
@@ -150,9 +155,10 @@
             this.btniniciar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btniniciar.Font = new System.Drawing.Font("Rockwell", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btniniciar.ForeColor = System.Drawing.Color.White;
-            this.btniniciar.Location = new System.Drawing.Point(135, 657);
+            this.btniniciar.Location = new System.Drawing.Point(120, 526);
+            this.btniniciar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btniniciar.Name = "btniniciar";
-            this.btniniciar.Size = new System.Drawing.Size(218, 72);
+            this.btniniciar.Size = new System.Drawing.Size(194, 58);
             this.btniniciar.TabIndex = 47;
             this.btniniciar.Text = "Iniciar Partida";
             this.btniniciar.UseVisualStyleBackColor = false;
@@ -163,9 +169,9 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.WhiteSmoke;
             this.label3.Font = new System.Drawing.Font("Rockwell", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(105, 552);
+            this.label3.Location = new System.Drawing.Point(93, 442);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(224, 37);
+            this.label3.Size = new System.Drawing.Size(187, 31);
             this.label3.TabIndex = 46;
             this.label3.Text = "Movimientos:";
             // 
@@ -175,9 +181,9 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Rockwell", 33F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(207)))), ((int)(((byte)(50)))));
-            this.label1.Location = new System.Drawing.Point(45, 388);
+            this.label1.Location = new System.Drawing.Point(40, 310);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(432, 74);
+            this.label1.Size = new System.Drawing.Size(358, 62);
             this.label1.TabIndex = 45;
             this.label1.Text = "MEMORAMA";
             // 
@@ -186,9 +192,9 @@
             this.lblmov.AutoSize = true;
             this.lblmov.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblmov.Font = new System.Drawing.Font("Rockwell", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblmov.Location = new System.Drawing.Point(339, 552);
+            this.lblmov.Location = new System.Drawing.Point(301, 442);
             this.lblmov.Name = "lblmov";
-            this.lblmov.Size = new System.Drawing.Size(35, 37);
+            this.lblmov.Size = new System.Drawing.Size(29, 31);
             this.lblmov.TabIndex = 44;
             this.lblmov.Text = "0";
             // 
@@ -199,9 +205,10 @@
             this.btnReiniciar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReiniciar.Font = new System.Drawing.Font("Rockwell", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReiniciar.ForeColor = System.Drawing.Color.White;
-            this.btnReiniciar.Location = new System.Drawing.Point(135, 755);
+            this.btnReiniciar.Location = new System.Drawing.Point(120, 604);
+            this.btnReiniciar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnReiniciar.Name = "btnReiniciar";
-            this.btnReiniciar.Size = new System.Drawing.Size(218, 72);
+            this.btnReiniciar.Size = new System.Drawing.Size(194, 58);
             this.btnReiniciar.TabIndex = 43;
             this.btnReiniciar.Text = "Reiniciar Partida";
             this.btnReiniciar.UseVisualStyleBackColor = false;
@@ -214,14 +221,15 @@
             // 
             // Memorama
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1612, 985);
+            this.ClientSize = new System.Drawing.Size(1446, 921);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.PanelJuego);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Memorama";
             this.Text = "Memorama";
             this.panel1.ResumeLayout(false);
