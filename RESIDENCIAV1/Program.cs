@@ -16,7 +16,7 @@ namespace RESIDENCIAV1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new SimonDice());
+            Application.Run(new Login());
         }
     }
 }

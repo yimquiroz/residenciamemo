@@ -17,7 +17,8 @@ namespace RESIDENCIAV1
         {
 
 
-            string cs = "server=YIMQUIROZ\\SQLEXPRESS;database=Residencia_Memorama;integrated security=true;";
+            //string cs = "server=YIMQUIROZ\\SQLEXPRESS;database=Residencia_Memorama;integrated security=true;";
+            string cs = "Data Source=localhost;Initial Catalog=Residencia_Memorama;User Id=SA;Password=Aaya98020415;";
             return cs;
 
         }
@@ -27,7 +28,7 @@ namespace RESIDENCIAV1
             string query = "[dbo].[Insertar_Historial]";
             SqlParameter[] Par = new SqlParameter[4];
             Par[0] = new SqlParameter("@Id_Usuario", SqlDbType.Int);
-            Par[0].Value = Id_Usuario;
+            Par[0].Value = 1;
             Par[1] = new SqlParameter("@Tiempo", SqlDbType.VarChar);
             Par[1].Value = Tiempo;
             Par[2] = new SqlParameter("@Movimientos", SqlDbType.Int);
@@ -45,6 +46,16 @@ namespace RESIDENCIAV1
             Par[0].Value = Nombre_Usuario;
                      
             return dtUsuario = SqlHelper.ExecuteDataset(Conex, CommandType.StoredProcedure,query,Par).Tables[0];
+
+        }
+
+
+        public static DataTable Trae_Reporte()
+        {
+
+            DataTable dtReporte;
+            string Query = "[dbo].[Reporte]";
+            return dtReporte = SqlHelper.ExecuteDataset(Conex, CommandType.StoredProcedure, Query).Tables[0];
 
         }
     }

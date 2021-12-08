@@ -18,6 +18,8 @@ namespace RESIDENCIAV1
 
         Usuarios user = new Usuarios();
 
+        public int IdUser;
+
         public const int WM_NCLBUTTONDOWN = 0xA1;
         public const int HT_CAPTION = 0x2;
 
@@ -141,15 +143,15 @@ namespace RESIDENCIAV1
                 {
                     CartasVolteadas++;
                     if (CartasVolteadas > 7)
-                    {
+                    {   ConexionBD.InsertaHistorial(IdUser, lbltime.Text , Convert.ToInt32(lblmov.Text));
                         cronometro.Stop();
                         MessageBox.Show("El juego terminó " + lbltime.Text);
 
 
-                        int IDUser = Convert.ToInt32(login.usuario);
+                       // int IDUser = Convert.ToInt32(login.usuario);
                         
                         //mandar a llamar de uno a otro
-                        //ConexionBD.InsertaHistorial(, lbltime.Text , Convert.ToInt32(lblmov.Text));
+
                         
                     
                     }
@@ -236,6 +238,17 @@ namespace RESIDENCIAV1
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void BTNTerminar_Click(object sender, EventArgs e)
+        {
+            ConexionBD.InsertaHistorial(IdUser,lbltime.Text,Convert.ToInt32(lblmov.Text));
+        }
+
+        private void btnHistorial_Click(object sender, EventArgs e)
+        {
+            Reporte R = new Reporte();
+            R.Show();
         }
     }
 }

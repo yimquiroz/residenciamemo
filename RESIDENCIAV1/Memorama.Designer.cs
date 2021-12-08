@@ -35,6 +35,8 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnHistorial = new System.Windows.Forms.Button();
+            this.BTNTerminar = new System.Windows.Forms.Button();
             this.lbltime = new System.Windows.Forms.Label();
             this.btniniciar = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
@@ -49,10 +51,9 @@
             // PanelJuego
             // 
             this.PanelJuego.BackColor = System.Drawing.Color.White;
-            this.PanelJuego.Location = new System.Drawing.Point(366, 46);
-            this.PanelJuego.Margin = new System.Windows.Forms.Padding(2);
+            this.PanelJuego.Location = new System.Drawing.Point(549, 71);
             this.PanelJuego.Name = "PanelJuego";
-            this.PanelJuego.Size = new System.Drawing.Size(710, 670);
+            this.PanelJuego.Size = new System.Drawing.Size(1065, 1031);
             this.PanelJuego.TabIndex = 0;
             // 
             // timer1
@@ -65,10 +66,9 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(158)))), ((int)(((byte)(206)))));
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label6);
-            this.panel1.Location = new System.Drawing.Point(-1, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Location = new System.Drawing.Point(-2, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1088, 41);
+            this.panel1.Size = new System.Drawing.Size(1632, 63);
             this.panel1.TabIndex = 29;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
@@ -78,10 +78,9 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(1018, 3);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Location = new System.Drawing.Point(1527, 5);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(21, 24);
+            this.label7.Size = new System.Drawing.Size(31, 32);
             this.label7.TabIndex = 23;
             this.label7.Text = "_";
             this.label7.Click += new System.EventHandler(this.label7_Click);
@@ -91,10 +90,9 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(1046, 6);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Location = new System.Drawing.Point(1569, 9);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(27, 25);
+            this.label6.Size = new System.Drawing.Size(37, 36);
             this.label6.TabIndex = 22;
             this.label6.Text = "X";
             this.label6.Click += new System.EventHandler(this.label6_Click);
@@ -102,27 +100,48 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel2.Controls.Add(this.btnHistorial);
+            this.panel2.Controls.Add(this.BTNTerminar);
             this.panel2.Controls.Add(this.lbltime);
             this.panel2.Controls.Add(this.btniniciar);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.lblmov);
             this.panel2.Controls.Add(this.btnReiniciar);
-            this.panel2.Location = new System.Drawing.Point(0, 41);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
+            this.panel2.Location = new System.Drawing.Point(0, 63);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(340, 688);
+            this.panel2.Size = new System.Drawing.Size(510, 1058);
             this.panel2.TabIndex = 30;
+            // 
+            // btnHistorial
+            // 
+            this.btnHistorial.Location = new System.Drawing.Point(145, 597);
+            this.btnHistorial.Name = "btnHistorial";
+            this.btnHistorial.Size = new System.Drawing.Size(186, 54);
+            this.btnHistorial.TabIndex = 50;
+            this.btnHistorial.Text = "Historial";
+            this.btnHistorial.UseVisualStyleBackColor = true;
+            this.btnHistorial.Click += new System.EventHandler(this.btnHistorial_Click);
+            // 
+            // BTNTerminar
+            // 
+            this.BTNTerminar.Location = new System.Drawing.Point(145, 498);
+            this.BTNTerminar.Name = "BTNTerminar";
+            this.BTNTerminar.Size = new System.Drawing.Size(164, 51);
+            this.BTNTerminar.TabIndex = 49;
+            this.BTNTerminar.Text = "Terminar";
+            this.BTNTerminar.UseVisualStyleBackColor = true;
+            this.BTNTerminar.Click += new System.EventHandler(this.BTNTerminar_Click);
             // 
             // lbltime
             // 
             this.lbltime.AutoSize = true;
-            this.lbltime.Location = new System.Drawing.Point(87, 567);
+            this.lbltime.Location = new System.Drawing.Point(130, 872);
+            this.lbltime.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbltime.Name = "lbltime";
-            this.lbltime.Size = new System.Drawing.Size(49, 13);
+            this.lbltime.Size = new System.Drawing.Size(71, 20);
             this.lbltime.TabIndex = 48;
             this.lbltime.Text = "00:00:00";
-            this.lbltime.Visible = false;
             // 
             // btniniciar
             // 
@@ -131,10 +150,9 @@
             this.btniniciar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btniniciar.Font = new System.Drawing.Font("Rockwell", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btniniciar.ForeColor = System.Drawing.Color.White;
-            this.btniniciar.Location = new System.Drawing.Point(90, 427);
-            this.btniniciar.Margin = new System.Windows.Forms.Padding(2);
+            this.btniniciar.Location = new System.Drawing.Point(135, 657);
             this.btniniciar.Name = "btniniciar";
-            this.btniniciar.Size = new System.Drawing.Size(145, 47);
+            this.btniniciar.Size = new System.Drawing.Size(218, 72);
             this.btniniciar.TabIndex = 47;
             this.btniniciar.Text = "Iniciar Partida";
             this.btniniciar.UseVisualStyleBackColor = false;
@@ -145,10 +163,9 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.WhiteSmoke;
             this.label3.Font = new System.Drawing.Font("Rockwell", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(70, 359);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(105, 552);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(149, 25);
+            this.label3.Size = new System.Drawing.Size(224, 37);
             this.label3.TabIndex = 46;
             this.label3.Text = "Movimientos:";
             // 
@@ -158,10 +175,9 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Rockwell", 33F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(207)))), ((int)(((byte)(50)))));
-            this.label1.Location = new System.Drawing.Point(30, 252);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(45, 388);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(291, 49);
+            this.label1.Size = new System.Drawing.Size(432, 74);
             this.label1.TabIndex = 45;
             this.label1.Text = "MEMORAMA";
             // 
@@ -170,10 +186,9 @@
             this.lblmov.AutoSize = true;
             this.lblmov.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblmov.Font = new System.Drawing.Font("Rockwell", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblmov.Location = new System.Drawing.Point(226, 359);
-            this.lblmov.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblmov.Location = new System.Drawing.Point(339, 552);
             this.lblmov.Name = "lblmov";
-            this.lblmov.Size = new System.Drawing.Size(24, 25);
+            this.lblmov.Size = new System.Drawing.Size(35, 37);
             this.lblmov.TabIndex = 44;
             this.lblmov.Text = "0";
             // 
@@ -184,10 +199,9 @@
             this.btnReiniciar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReiniciar.Font = new System.Drawing.Font("Rockwell", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReiniciar.ForeColor = System.Drawing.Color.White;
-            this.btnReiniciar.Location = new System.Drawing.Point(90, 491);
-            this.btnReiniciar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnReiniciar.Location = new System.Drawing.Point(135, 755);
             this.btnReiniciar.Name = "btnReiniciar";
-            this.btnReiniciar.Size = new System.Drawing.Size(145, 47);
+            this.btnReiniciar.Size = new System.Drawing.Size(218, 72);
             this.btnReiniciar.TabIndex = 43;
             this.btnReiniciar.Text = "Reiniciar Partida";
             this.btnReiniciar.UseVisualStyleBackColor = false;
@@ -200,15 +214,14 @@
             // 
             // Memorama
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1075, 640);
+            this.ClientSize = new System.Drawing.Size(1612, 985);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.PanelJuego);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Memorama";
             this.Text = "Memorama";
             this.panel1.ResumeLayout(false);
@@ -234,5 +247,7 @@
         private System.Windows.Forms.Label lbltime;
         private System.Windows.Forms.Button btniniciar;
         private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.Button BTNTerminar;
+        private System.Windows.Forms.Button btnHistorial;
     }
 }

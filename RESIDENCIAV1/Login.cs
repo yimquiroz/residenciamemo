@@ -33,8 +33,9 @@ namespace RESIDENCIAV1
         [System.Runtime.InteropServices.DllImportAttribute("user32.dll")]
         public static extern bool ReleaseCapture();
 
-        public SqlConnection conexion = new SqlConnection("server=YIMQUIROZ\\SQLEXPRESS;database=Residencia_Memorama;integrated security=true");
-        
+        //public SqlConnection conexion = new SqlConnection("server=YIMQUIROZ\\SQLEXPRESS;database=Residencia_Memorama;integrated security=true");
+        public SqlConnection conexion = new SqlConnection("Data Source=localhost;Initial Catalog=Residencia_Memorama;User Id=SA;Password=Aaya98020415;");
+
         private void user_Enter(object sender, EventArgs e)
         {
             //creando condicion para verificar si es el usuario y se vacia
@@ -77,14 +78,16 @@ namespace RESIDENCIAV1
         {
 
             UserID = ConexionBD.Traer_IdUser(usertxt.Text);
-            usuario1.Id =Convert.ToInt32( UserID.Rows[0]["id"].ToString());
+           // usuario1.Id =Convert.ToInt32( UserID.Rows[0]["id"].ToString());
             conexion.Open();
             string consulta = "select * from Usuarios where Usuario='" + usertxt.Text + "'and Passw='" + psstxt.Text + "'";
             SqlCommand comando = new SqlCommand(consulta,conexion);
             SqlDataReader lector;
             lector = comando.ExecuteReader();
 
-            
+            Memorama memorama1 = new Memorama();
+            memorama1.IdUser = Convert.ToInt32(UserID.Rows[0]["Id"].ToString());
+
 
             if (lector.HasRows==true)
             {
