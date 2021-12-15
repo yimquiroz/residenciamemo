@@ -15,10 +15,10 @@ namespace RESIDENCIAV1
     public partial class Memorama : Form 
     {
         Login login = new Login();
-
+        int Id = 0;
         Usuarios user = new Usuarios();
 
-        public int IdUser;
+        
 
         public const int WM_NCLBUTTONDOWN = 0xA1;
         public const int HT_CAPTION = 0x2;
@@ -37,6 +37,15 @@ namespace RESIDENCIAV1
         {
             InitializeComponent();
             IniciarPartida();
+        }
+
+        public Memorama(int Id)
+        {
+            
+        InitializeComponent();
+        IniciarPartida();
+            this.Id = Id;
+            
         }
 
         [System.Runtime.InteropServices.DllImportAttribute("user32.dll")]
@@ -143,7 +152,8 @@ namespace RESIDENCIAV1
                 {
                     CartasVolteadas++;
                     if (CartasVolteadas > 7)
-                    {   ConexionBD.InsertaHistorial(IdUser, lbltime.Text , Convert.ToInt32(lblmov.Text));
+                    {   //ConexionBD.InsertaHistorial(IdUser, lbltime.Text , Convert.ToInt32(lblmov.Text));
+                        ConexionBD.InsertaHistorial(Id, lbltime.Text, Convert.ToInt32(lblmov.Text));
                         cronometro.Stop();
                         MessageBox.Show("El juego terminó " + lbltime.Text);
 
@@ -208,15 +218,15 @@ namespace RESIDENCIAV1
         }
         //CRONOMETRO 
         Stopwatch cronometro = new Stopwatch();
-        int seg;
-        int min;
+        
 
         private void btniniciar_Click(object sender, EventArgs e)
         {
+
             this.PanelJuego.Visible = true;
             timer2.Enabled = true;
             cronometro.Start();
-            btniniciar.Enabled = true;
+            //btniniciar.Enabled = true;
             //this.PanelJuego.Enabled = true; No funciono de esta manera
             //entonces lo hice invisible pero esta es mas o menos la idea
         }
@@ -241,7 +251,7 @@ namespace RESIDENCIAV1
 
         private void BTNTerminar_Click(object sender, EventArgs e)
         {
-            ConexionBD.InsertaHistorial(IdUser,lbltime.Text,Convert.ToInt32(lblmov.Text));
+            ConexionBD.InsertaHistorial(Id,lbltime.Text,Convert.ToInt32(lblmov.Text));
         }
 
         private void btnHistorial_Click(object sender, EventArgs e)
@@ -252,7 +262,7 @@ namespace RESIDENCIAV1
 
         private void PanelJuego_Paint(object sender, PaintEventArgs e)
         {
-            this.PanelJuego.Visible= false;
+            this.PanelJuego.Visible=true;
             //this.PanelJuego.Enabled = false; No funciono de esta manera
             //entonces lo hice invisible pero esta es mas o menos la idea
         }

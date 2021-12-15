@@ -440,3 +440,4 @@ C:\Users\ivanu\Documents\GitHub\residenciamemo\RESIDENCIAV1\obj\Debug\RESIDENCIA
 C:\Users\ivanu\Documents\GitHub\residenciamemo\RESIDENCIAV1\obj\Debug\RESIDENCIAV1.csproj.CopyComplete
 C:\Users\ivanu\Documents\GitHub\residenciamemo\RESIDENCIAV1\obj\Debug\RESIDENCIAV1.exe
 C:\Users\ivanu\Documents\GitHub\residenciamemo\RESIDENCIAV1\obj\Debug\RESIDENCIAV1.pdb
+C:\Users\ASUS S510U\OneDrive\Escritorio\residenciamemo\RESIDENCIAV1\obj\Debug\RESIDENCIAV1.Reporte.resources
